@@ -1,39 +1,19 @@
 import React from 'react'
+import Flights from '../Home/Booking/Flights'
+import Hotels from './Booking/Hotels';
+import Cabs from './Booking/Cabs';
+import Villas from './Booking/Villas';
+import Train from './Booking/Train';
+import Bus from './Booking/Bus';
 
-const detailsData = {
-  Flights: {
-    title: "Book Flights",
-    text: "Find the best deals on domestic and international flights.",
-  },
-  Hotels: {
-    title: "Book Hotels",
-    text: "Discover top-rated hotels at unbeatable prices.",
-  },
-  Train: {
-    title: "Book Trains",
-    text: "Get your train tickets easily and quickly.",
-  },
-  Cab: {
-    title: "Book Cabs",
-    text: "Convenient and affordable cab services at your fingertips.",
-  },
-  Bus: {
-    title: "Book Buses",
-    text: "Travel comfortably with our bus booking options.",
-  },
-  Bike: {
-    title: "Rent Bikes",
-    text: "Explore the city with our bike rental services.",
-  },
-  Scooty: {
-    title: "Rent Scooties",
-    text: "Easy and quick scooty rentals for your daily commute.",
-  },
-  Villas: {
-    title: "Book Villas",
-    text: "Find luxurious villas for your next vacation.",
-  },
-};
+const componentsMap = {
+  Flights: Flights,
+  Hotels: Hotels,
+  Cabs: Cabs,
+  Villas: Villas,
+  Train: Train,
+  Bus: Bus
+}
 
 const Details = ({ selected }) => {
   if (!selected) {
@@ -44,14 +24,8 @@ const Details = ({ selected }) => {
     );
   }
 
-  const detail = detailsData[selected];
-
-  return (
-    <div className="details-home">
-      <h2>{detail.title}</h2>
-      <p>{detail.text}</p>
-    </div>
-  );
+  const Component = componentsMap[selected]; // pick component dynamically
+  return Component ? <Component /> : <h2>Not Found</h2>;
 };
 
 export default Details;

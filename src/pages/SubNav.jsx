@@ -40,7 +40,7 @@ const SubNav = ({ onSelect, activeItem }) => {
                 ))}
             </div>
 
-            <div className="subnav-details mt-6">
+            <div className="subnav-details ">
                 <Details selected={selected} />
             </div>
         </div>
