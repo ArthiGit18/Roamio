@@ -8,6 +8,7 @@
     --hover-color: #98CD00;
     --active-color: red;
     --card-color: #e0dede;
+    --border-color:#2A004E;
 }
 
 [data-theme='dark'] {
@@ -19,6 +20,7 @@
     --hover-color: #B6F500;
     --active-color: red;
     --card-color: #393E46;
+    --border-color:#9400FF;
 }
 
 body {

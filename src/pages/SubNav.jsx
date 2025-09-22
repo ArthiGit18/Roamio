@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Details from "./Home/Details";
 
 export const navItems = [
-    { name: "Flights", img: "/assets/img/y7.png", banner: "/assets/vehicle/flight2.jpg" },
+    { name: "Flights", img: "/assets/img/y7.png", banner: "/assets/vehicle/flight1.jpg" },
     { name: "Hotels", img: "/assets/img/y8.png", banner: "/assets/vehicle/hotel1.jpg" },
     { name: "Train", img: "/assets/img/y3.png", banner: "/assets/vehicle/train1.jpg" },
     { name: "Cab", img: "/assets/img/y5.png", banner: "/assets/vehicle/car1.jpg" },

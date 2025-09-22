@@ -6,32 +6,34 @@ const Banner = () => {
     const [activeItem, setActiveItem] = useState(navItems[0].name); // default Flights
 
     return (
-        <div
-            className="banner"
-            style={{
-                backgroundImage: `url(${bgImage})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "80vh",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                color: "white",
-            }}
-        >
-            <div className="banner-content text-center mb-8">
-                <h1 className="text-4xl font-bold">Discover Your Next Journey</h1>
-                <p className="text-lg">Book flights, hotels, and holidays with ease</p>
-            </div>
+        <div className="banner_wrapper">
+            <div
+                className="banner"
+                style={{
+                    backgroundImage: `url(${bgImage})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    height: "80vh",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    color: "white",
+                }}
+            >
+                <div className="banner-content text-center mb-8">
+                    <h1 className="text-4xl font-bold">Discover Your Next Journey</h1>
+                    <p className="text-lg">Book flights, hotels, and holidays with ease</p>
+                </div>
 
-            <div className="banner-option">
-                <SubNav
-                    activeItem={activeItem}
-                    onSelect={(item) => {
-                        setBgImage(item.banner);
-                        setActiveItem(item.name);
-                    }}
-                />
+                <div className="banner-option">
+                    <SubNav
+                        activeItem={activeItem}
+                        onSelect={(item) => {
+                            setBgImage(item.banner);
+                            setActiveItem(item.name);
+                        }}
+                    />
+                </div>
             </div>
         </div>
     );
