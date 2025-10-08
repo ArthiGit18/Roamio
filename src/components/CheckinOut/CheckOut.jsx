@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { TextField } from "@mui/material";
+import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import dayjs from "dayjs";
 
-const CheckOut = () => {
+const CheckOut = ({ value, onChange }) => {
+  const [date, setDate] = useState(value || null);
+
+  const handleChange = (newValue) => {
+    setDate(newValue);
+    if (onChange) onChange(newValue); // propagate to parent
+  };
+
   return (
-    <div className="form-group">
-      <label htmlFor="checkout">Check Out</label>
-      <input type="date" id="checkout" className="form-control" />
-    </div>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <DatePicker
+        label="Check Out"
+        value={date}
+        onChange={handleChange}
+        slotProps={{
+          textField: { fullWidth: true, margin: "normal" },
+        }}
+      />
+    </LocalizationProvider>
   );
 };
 

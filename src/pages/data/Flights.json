@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "airline": "Emirates",
+    "airline.No": "2A 2691",
+    "price": 15000,
+    "from": "Chennai",
+    "to": "Dubai",
+    "departureTime": "10:30 AM",
+    "arrivalTime": "5:00 PM",
+    "duration": "3h 30m",
+    "stops": "Non-stop",
+    "image": "/assets/flights/1.jpg",
+    "link": "/flight-details/1"
+  },
+  {
+    "id": 2,
+    "airline": "Indigo",
+    "airline.No": "6E 1234",
+    "price": 7500,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "departureTime": "06:00 AM",
+    "arrivalTime": "09:00 AM",
+    "duration": "2h 0m",
+    "stops": "Non-stop",
+    "image": "/assets/flights/2.jpg",
+    "link": "/flight-details/2"
+  },
+  {
+    "id": 3,
+    "airline": "Air India",
+    "airline.No": "AI 202",
+    "price": 9800,
+    "from": "Bangalore",
+    "to": "Singapore",
+    "departureTime": "02:00 PM",
+    "arrivalTime": "06:00 PM",
+    "duration": "4h 0m",
+    "stops": "Non-stop",
+    "image": "/assets/flights/3.jpg",
+    "link": "/flight-details/3"
+  },
+  {
+    "id": 4,
+    "airline": "Singapore Airlines",
+    "airline.No": "SQ 423",
+    "price": 22000,
+    "from": "Mumbai",
+    "to": "Singapore",
+    "departureTime": "11:45 PM",
+    "arrivalTime": "07:30 AM",
+    "duration": "5h 45m",
+    "stops": "Non-stop",
+    "image": "/assets/flights/4.jpg",
+    "link": "/flight-details/4"
+  },
+  {
+    "id": 5,
+    "airline": "Qatar Airways",
+    "airline.No": "QR 573",
+    "price": 18000,
+    "from": "Hyderabad",
+    "to": "Doha",
+    "departureTime": "08:15 AM",
+    "arrivalTime": "11:10 AM",
+    "duration": "3h 55m",
+    "stops": "Non-stop",
+    "image": "/assets/flights/5.jpg",
+    "link": "/flight-details/5"
+  }
+]

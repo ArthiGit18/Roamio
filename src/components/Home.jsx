@@ -6,7 +6,6 @@ import Main from '../pages/Home/Main'
 const Home = () => {
   return (
     <>
-      <Nav />
       <Main />
     </>
   )

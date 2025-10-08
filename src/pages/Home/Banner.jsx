@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SubNav, { navItems } from "../SubNav"; // export navItems for default
+import Nav from "../Nav";
 
 const Banner = () => {
     const [bgImage, setBgImage] = useState(navItems[0].banner); // default Flights banner
@@ -7,13 +8,15 @@ const Banner = () => {
 
     return (
         <div className="banner_wrapper">
+
+            <Nav />
             <div
                 className="banner"
                 style={{
                     backgroundImage: `url(${bgImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    height: "80vh",
+                    height: "90vh",
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",

@@ -1,0 +1,193 @@
+.css-pkn1go-MuiFormControl-root-MuiPickersTextField-root {
+  margin: 0;
+  margin-top: 0;
+
+}
+
+
+.flights-container-filter {
+  width: 100%;
+  margin: auto;
+  // margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: var(--background2-color);
+
+  .flight-locations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+.flight-filter-page{
+  margin-top: 80px;
+.flight-filter-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  .filters-sidebar {
+    flex: 1;
+    max-width: 280px;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    h6,
+    .MuiTypography-subtitle1 {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+  }
+
+  .flights-results {
+    flex: 3;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+
+    .results-list {
+      margin-top: 20px;
+
+      .flight-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          border-color: #1976d2;
+          background: #f1f8ff;
+        }
+      }
+    }
+  }
+}
+}
+
+.results-list {
+  margin-top: 20px;
+
+  .flight-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.25s ease;
+
+    &:hover {
+      border-color: #1976d2;
+      background: #f1f8ff;
+    }
+
+    .flight-info {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      column-gap: 20px;
+
+
+      .flight-img img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      .flight-details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        column-gap: 10px;
+
+        .arrow {
+          height: 3px;
+          width: 60px;
+          background-color: gray;
+        }
+
+        h3 {
+          margin: 0 0 6px 0;
+          font-size: 18px;
+        }
+
+        .fare {
+          margin: 0 0 8px 0;
+          font-weight: 600;
+        }
+
+        .route,
+        .times {
+          margin: 0;
+          color: #555;
+          font-size: 14px;
+        }
+      }
+
+      .view-btn {
+        margin-left: auto;
+      }
+    }
+
+    .flight-offers {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+      background-color: #ddd;
+
+
+      .offer-badge {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        padding: 4px 8px;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #555;
+        
+
+        p {
+          margin: 0;
+          color: #ccc;
+        }
+
+        .MuiTypography-body2 {
+          font-size: 13px;
+          color: #777;
+          text-align: center;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .flight-note{
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
+
+.flight-accordion {
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}

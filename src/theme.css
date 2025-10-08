@@ -3,11 +3,13 @@
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --accent-color: #000000;
-    --background-color: #ffffff;
+    --background-color: #F8FAFC;
+    --background2-color: #e7dcff;
+
     --text-color: #333333;
     --hover-color: #98CD00;
     --active-color: red;
-    --card-color: #e0dede;
+    --card-color: #FFFFFF;
     --border-color:#2A004E;
 }
 
@@ -16,6 +18,7 @@
     --secondary-color: #e74c3c;
     --accent-color: white;
     --background-color: #1e1e1e;
+    --background2-color: #5d5c5d;
     --text-color: #f0f0f0;
     --hover-color: #B6F500;
     --active-color: red;

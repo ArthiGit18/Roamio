@@ -5,7 +5,7 @@ export const navItems = [
     { name: "Flights", img: "/assets/img/y7.png", banner: "/assets/vehicle/flight1.jpg" },
     { name: "Hotels", img: "/assets/img/y8.png", banner: "/assets/vehicle/hotel1.jpg" },
     { name: "Train", img: "/assets/img/y3.png", banner: "/assets/vehicle/train1.jpg" },
-    { name: "Cab", img: "/assets/img/y5.png", banner: "/assets/vehicle/car1.jpg" },
+    { name: "Cabs", img: "/assets/img/y5.png", banner: "/assets/vehicle/car1.jpg" },
     { name: "Bus", img: "/assets/img/y4.png", banner: "/assets/vehicle/bus1.jpg" },
     { name: "Bike", img: "/assets/img/y6.png", banner: "/assets/vehicle/bike2.jpg" },
     { name: "Scooty", img: "/assets/img/y2.png", banner: "/assets/vehicle/scooty1.jpg" },
